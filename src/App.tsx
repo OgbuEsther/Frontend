@@ -3,10 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './myComponents/Header';
 import Routes from './myComponents/allRoutes/Routes';
+import { GlobalStyle } from './GlobalStyles';
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
+      
       <Header />
       <Routes />
     </div>

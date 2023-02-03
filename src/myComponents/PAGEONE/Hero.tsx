@@ -1,7 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import two from "../../COMPONENTS/two.png"
+import two from "../../COMPONENTS/22.png"
 import { Link } from "react-router-dom";
 
 
@@ -28,7 +28,7 @@ const Hero = () => {
           </DivOne>
           <DivTwo>
             <Bg src={two} />
-         
+            {/* <img src={two} alt="head gear" /> */}
           </DivTwo>
         </Wrapper>
       </Container>
@@ -106,7 +106,8 @@ color: black;
     width: 150px;
     height: 50px;
     background-color: white;
-    color: #ff0077;
+ 
+    color : black;
     cursor: pointer;
     font-weight: bold;
     transition: all ease-in-out 400ms;
@@ -124,10 +125,13 @@ transition: all 400ms ease-in-out;
 `;
 
 const DivTwo = styled.div`
+
   width: 450px;
   height: 400px;
   display: flex;
-
+  justify-content: flex-end;
+  align-items: flex-end;
+margin-top: 35px;
   @media screen and (max-width: 960px) {
     width: 270px;
     height: 200px;
@@ -140,11 +144,11 @@ const Wrapper = styled.div`
   /* height: 500px; */
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 
   @media screen and (max-width: 960px) {
     flex-direction: column-reverse;
@@ -158,5 +162,5 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f1f1f1;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 `;

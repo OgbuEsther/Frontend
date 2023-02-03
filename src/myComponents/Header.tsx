@@ -26,8 +26,8 @@ const toggle = () =>{
                 </NavLinks>
 
                 <ButtonHold>
-                    <Button1>SignUp</Button1>
-                    <Button2>SignIn</Button2>
+                    <Button1 to ="/signup">SignUp</Button1>
+                    <Button2 to ="/signin">SignIn</Button2>
                 </ButtonHold>
 
                 <DivFour>
@@ -57,7 +57,7 @@ const DivFour = styled.div`
   }
 `
 
-const Button2 = styled.button`
+const Button2 = styled(Link)`
 
 width: 120px;
 height: 30px;
@@ -68,21 +68,30 @@ cursor: pointer;
 font-weight: bold;
 transition: all 350ms ease-in-out;
 border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
 `
 
-const Button1 = styled.button`
+const Button1 = styled(Link)`
 margin-right: 10px;
 width: 120px;
 height: 30px;
 background-color: black;
 color: white;
+text-decoration: none;
 cursor: pointer;
 font-weight: bold;
 transition: all 350ms ease-in-out;
 border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
 `
 
 const ButtonHold = styled.div`
+display: flex;
 @media screen and (max-width: 500px) {
   display: none;
 }

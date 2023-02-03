@@ -14,7 +14,7 @@ const Routes :React.FC = ()=>{
         {path : "/" , element : <LandingPage />},
         {path : "/catalog" ,element : <ViewScreen /> },
         {path : "/contact" ,element : <Contact /> },
-        {path : "/sigin" , element : <SignIn />},
+        {path : "/signin" , element : <SignIn />},
         {path : "/signup" , element : <SignUp />},
         {path : "/uploads" , element : <Uploads />}
     ])

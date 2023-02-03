@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import one from "../../COMPONENTS/21.png"
-import two from "../../COMPONENTS/22.png"
-import three from "../../COMPONENTS/23.png"
+import two from "../../COMPONENTS/31.png"
+import three from "../../COMPONENTS/18.png"
 
 
 const Display2 : React.FC =() =>{
