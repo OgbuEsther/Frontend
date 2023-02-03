@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
+import DropDown from "./DropDown";
+import {AiOutlineMenu} from "react-icons/ai"
 
 const Header = () =>{
+
+    const [show , setShow ] = React.useState(false)
+
+const toggle = () =>{
+  setShow(!show) 
+}
     return (
         <div>
           <Container>
@@ -22,6 +29,13 @@ const Header = () =>{
                     <Button1>SignUp</Button1>
                     <Button2>SignIn</Button2>
                 </ButtonHold>
+
+                <DivFour>
+            <AiOutlineMenu onClick={toggle} />
+          </DivFour>
+      {
+        show ?     <DropDown /> : null
+      }
             </Wrapper>
 
           </Container>
@@ -31,6 +45,18 @@ const Header = () =>{
 }
 
 export default Header
+
+const DivFour = styled.div`
+  display: none;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+    /* display: flex; */
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+  }
+`
+
 const Button2 = styled.button`
 
 width: 120px;
@@ -57,6 +83,9 @@ border-radius: 10px;
 `
 
 const ButtonHold = styled.div`
+@media screen and (max-width: 500px) {
+  display: none;
+}
 
 `
 
@@ -69,6 +98,9 @@ margin-right: 20px;
 `
 
 const NavLinks = styled.div`
+@media screen and (max-width: 500px) {
+  display: none;
+}
 
 
 `
@@ -83,6 +115,12 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 500px) {
+  display: flex;
+  width: 100%;
+}
+
 `
 
 const Container = styled.div`
