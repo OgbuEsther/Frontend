@@ -2,6 +2,7 @@ import React from "react";
 import Display from "./Display";
 
 import Display2 from "./Display2";
+import Follow from "./Follow";
 import Hero from "./Hero";
 
 
@@ -11,7 +12,7 @@ return (
         <Hero />
         <Display2 />
         <Display />
-      
+      <Follow />
     </div>
 )
 }
