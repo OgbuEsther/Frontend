@@ -1,4 +1,5 @@
 import React from "react";
+import Display from "./Display";
 
 import Display2 from "./Display2";
 import Hero from "./Hero";
@@ -9,6 +10,8 @@ return (
     <div>
         <Hero />
         <Display2 />
+        <Display />
+      
     </div>
 )
 }

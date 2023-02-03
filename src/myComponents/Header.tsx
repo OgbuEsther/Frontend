@@ -95,5 +95,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    z-index: 99999;
 
 `
