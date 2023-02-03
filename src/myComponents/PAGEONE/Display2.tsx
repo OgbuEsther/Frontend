@@ -58,6 +58,11 @@ h1{
  
  font-size: 20px;
 }
+      @media screen and (max-width: 768px) {
+ width: 500px;
+ 
+ font-size: 20px;
+}
 }
 
 `

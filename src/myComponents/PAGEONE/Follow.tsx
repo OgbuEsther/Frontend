@@ -8,7 +8,8 @@ import pic1 from "../../COMPONENTS/twoo.png"
 import pic2 from "../../COMPONENTS/20.png"
 import pic3 from "../../COMPONENTS/22.png"
 import pic4 from "../../COMPONENTS/22.png"
-
+import {BsWhatsapp ,BsFacebook ,BsInstagram} from "react-icons/bs"
+import {AiOutlineMail} from "react-icons/ai"
 const Follow = ()=>{
 
     const settings = {
@@ -27,33 +28,49 @@ const Follow = ()=>{
         <div>
             <Container>
                 <Wrapper>
-{/* <h1>FOLLOW US ON INSTAGRAM</h1>
-<pre>@yourinstagram</pre> */}
+<h1>FOLLOW US ON INSTAGRAM</h1>
+<pre>@yourinstagram</pre>
 {/* <a href="https://www.instagram.com/yourinstagram"></a> */}
 
-<Slider {...settings}>
-          <Div>
-           <img src={pic} alt="" />
-          </Div>
-          <Div>
-          <img src={pic1} alt="" />
-          </Div>
-          <Div>
-          <img src={pic2} alt="" />
-          </Div>
-          <Div>
-          <img src={pic3} alt="" />
-          </Div>
-          <Div>
-          <img src={pic4} alt="" />
-          </Div>
-          <Div>
-          <img src={pic} alt="" />
-          </Div>
-        </Slider>
+<Hold>
+    <Image>
+        <img src={pic} alt="" />
+    </Image>
+    <Image>
+        <img src={pic} alt="" />
+    </Image>
+    <Image>
+        <img src={pic} alt="" />
+    </Image>
+    <Image>
+        <img src={pic} alt="" />
+    </Image>
+</Hold>
      
 
                 </Wrapper>
+                <Content>
+                    <One>
+                        <BsWhatsapp />
+                        <pre>Order On Whatsapp</pre>
+                        <a href="https://www.whatsapp.com/yourinstagram">send a direct message to us</a>
+                    </One>
+                    <Two>
+                        <BsFacebook />
+                        <pre>View Page On FaceBook</pre>
+                        <a href="https://www.facebook.com/yourinstagram">visit our page on facebook</a>
+                    </Two>
+                    <Three>
+                        <BsInstagram />
+                        <pre>ONLINE SUPPORT</pre>
+                        <a href="https://www.whatsapp.com/yourinstagram">Support 24 hours a day</a>
+                    </Three>
+                    <Four>
+                        <AiOutlineMail />
+                        <pre>SEND AN EMAIL</pre>
+                        <a href="https://www.gmail.com/yourinstagram">send an email to us </a>
+                    </Four>
+                </Content>
             </Container>
         </div>
     )
@@ -61,45 +78,45 @@ const Follow = ()=>{
 
 export default Follow;
 
-const Div = styled.div`
- display: flex;
- /* justify-content: center;
- align-items: center; */
-    width: 300px;
-    height: 400px;
-    /* background-color: yellowgreen; */
-    margin: 20px;
-   
-    overflow: hidden;
-    /* position: relative; */
+const Four = styled.div``
 
-    img{
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-       
+const Three = styled.div``
 
-    }
-`
+const Two = styled.div``
 
+const One = styled.div``
 
-
-const Wrapper = styled.div`
-width: 100%;
-/* height: 500px; */
-/* background-color: red; */
-
-
-
+const Content =styled.div`
+display: flex;
 `
 
 const Container = styled.div`
-    display: flex;
+width: 100%;
+height: 400px;
+background-color: white;
+
+`
+
+const Hold = styled.div`
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+`
+
+const Wrapper = styled.div``
+
+const Image = styled.div`
+width: 300px;
+height: 300px;
+background-color: #F2F2F2;
+
+
+img{
     width: 100%;
-  /* height: 500px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,0.2);
-    overflow: hidden;
-    `
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+`

@@ -15,7 +15,7 @@ const Hero = () => {
           <DivOne>
             <TextHold>
               <TextOne>
-              You Think it , We Make it
+             <span> You Think it</span> <br /> We Make it
               </TextOne>
               <Des>
               We have a collection of the best head gears and hand bags for you. 
@@ -46,15 +46,18 @@ display: flex;
 justify-content: center ;
 justify-content: center;
 
-
-color: #ff0077;
+color: #494747;
     cursor: pointer;
+    :hover{
+      color: white;
+    }
+   
 `
 
 const Holder = styled.div`
     width: 100%;
 
-  background-color: #f1f1f1;
+  background-color: #F9F9F9;
 `
 
 
@@ -71,6 +74,8 @@ const Bg = styled.img`
 const TextHold = styled.div`
   text-align: left;
   z-index: 1;
+  width: 400px;
+  margin-top: -20px;
   @media screen and (max-width: 500px) {
  width: 300px;
 }
@@ -78,9 +83,15 @@ const TextHold = styled.div`
 
 const TextOne = styled.h1`
   color: black;
-  font-size: 40px;
+  font-size: 54px;
+  font-weight: 700;
   margin: 0;
   z-index: 1;
+
+  span{
+    font-size: 34px;
+  }
+
 
   @media screen and (max-width: 500px) {
  width: 300px;
@@ -118,6 +129,7 @@ transition: all 400ms ease-in-out;
     :hover{
         background-color: black;
         transform: scale(0.99);
+        color: white;
     }
 
     /* color: black; */
