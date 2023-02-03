@@ -78,13 +78,25 @@ const Follow = ()=>{
 
 export default Follow;
 
-const Four = styled.div``
+const Four = styled.div`
+width: 300px;
+height: 300px;
+`
 
-const Three = styled.div``
+const Three = styled.div`
+width: 300px;
+height: 300px;
+`
 
-const Two = styled.div``
+const Two = styled.div`
+width: 300px;
+height: 300px;
+`
 
-const One = styled.div``
+const One = styled.div`
+width: 300px;
+height: 300px;
+`
 
 const Content =styled.div`
 display: flex;
