@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import pic from "../../COMPONENTS/30.png"
 import axios from "axios"
+import { useNavigate ,Link } from "react-router-dom";
 
 interface gears {
     name: string;
@@ -15,10 +16,15 @@ interface gears {
 const Catalog = () =>{
     const [userData , setUserData] = React.useState<gears[]>([])
 
+  
+
+ 
     const fetchData = async() =>{
         await axios.get("https://beauty-q7ww.onrender.com/api/getall").then((res) =>{
             console.log(res.data.data)
             setUserData(res.data.data)
+
+            
         })
     }
 
@@ -31,7 +37,7 @@ const Catalog = () =>{
            <Container>
      {
         userData.map((props)=>(
-            <Wrapper key={props._id}>
+            <Wrapper  to={`/gears/${props._id}/details`} key={props._id}>
             <CardHold>
             <img src={props.image} alt="" />
             </CardHold>
@@ -71,9 +77,11 @@ img{
 }
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled(Link)`
 width: 300px;
 /* height: 400px; */
+text-decoration: none;
+color: black;
 margin: 20px;
 /* background-color: red; */
 /* background-color: darkgray; */
