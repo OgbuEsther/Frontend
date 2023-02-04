@@ -45,7 +45,7 @@ const Follow = ()=>{
                        <Icn> <BsWhatsapp /></Icn>
                      <Texts>
                      <pre>Order On Whatsapp</pre>
-                        <a href="https://www.whatsapp.com/yourinstagram">send a direct message to us</a>
+                        <a href="https://wa.me/+2348032234434">send a direct message to us</a>
                      </Texts>
 
                     </One>
@@ -97,6 +97,10 @@ const Icn = styled.div`
     margin-top : 10px;
     /* margin-right: 5px; */
     margin-left: 10px;
+    @media screen and (max-width: 500px) {
+    margin: 0;
+}
+    
 `
 
 const Four = styled.div`
@@ -111,9 +115,10 @@ a{
 
 @media screen and (max-width: 500px) {
     
-    width: 300px;
+    width: 200px;
     height: 100px;
 }
+
 `
 
 const Three = styled.div`
@@ -127,7 +132,7 @@ a{
 
 @media screen and (max-width: 500px) {
     
-    width: 300px;
+    width: 200px;
     height: 100px;
 }
 `
@@ -143,8 +148,9 @@ a{
 
 @media screen and (max-width: 500px) {
     
-    width: 300px;
+    width: 200px;
     height: 100px;
+    background-color: red;
 }
 
 `
@@ -160,7 +166,7 @@ a{
 
 @media screen and (max-width: 500px) {
     
-    width: 300px;
+    width: 200px;
     height: 100px;
 }
 
@@ -172,11 +178,12 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-/* background-color: red; */
+
 flex-wrap: wrap;
 @media screen and (max-width: 500px) {
     
-    width: 500px;
+    width: 300px;
+    background-color: red;
     
 }
 `
@@ -194,12 +201,18 @@ flex-direction: column;
 
 const Hold = styled.div`
 width: 95%;
-height: 100%;
+/* height: 100%; */
 display: flex;
 justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
  margin: 20px;
+
+ @media screen and (max-width: 500px) {
+
+    margin: 0;
+ }
+
 `
 
 const Wrapper = styled.div`
@@ -210,7 +223,11 @@ const Image = styled.div`
 width: 300px;
 height: 300px;
 background-color: #F2F2F2;
-
+@media screen and (max-width: 500px) {
+    
+    width: 290px;
+    height: 300px;
+}
 
 img{
     width: 100%;

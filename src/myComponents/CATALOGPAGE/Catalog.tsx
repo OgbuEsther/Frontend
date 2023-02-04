@@ -60,7 +60,7 @@ height: 20%;
 `
 const CardHold = styled.div`
 width: 300px;
-height: 80%;
+height: 300px;
 background-color: darkgray;
 /* background-color: blue; */
 
@@ -73,7 +73,7 @@ img{
 
 const Wrapper = styled.div`
 width: 300px;
-height: 400px;
+/* height: 400px; */
 margin: 20px;
 /* background-color: red; */
 /* background-color: darkgray; */
@@ -81,9 +81,13 @@ margin: 20px;
 `
 
 const Container = styled.div`
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
 
 width: 100%;
-height: 400px;
+/* height: 400px; */
 /* background-color: yellow; */
     
 `

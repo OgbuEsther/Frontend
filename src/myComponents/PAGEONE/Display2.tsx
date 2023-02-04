@@ -57,13 +57,18 @@ flex-direction: column;
 h1{
     margin: 0;
       @media screen and (max-width: 500px) {
- width: 300px;
+ width: 250px;
 
  
- font-size: 20px;
+ font-size: 18px;
 }
       @media screen and (max-width: 768px) {
  width: 500px;
+ 
+ font-size: 20px;
+}
+      @media screen and (max-width: 500px) {
+ width: 290px;
  
  font-size: 20px;
 }
@@ -88,10 +93,11 @@ flex-wrap: wrap;
 display: grid;
 grid-gap: 20px;
 
-grid-template-columns: repeat(3 , 1fr);
+grid-template-columns: repeat(3, 1fr);
 
 @media screen and (max-width: 500px) {
     width: 300px;
+    grid-template-columns: repeat(1, 1fr);
     /* height: 500px;
  
 background-color: red; */
@@ -110,8 +116,15 @@ background-color: rgb(244, 244, 244);
 
 
 @media screen and (max-width: 500px) {
-    width: 100px;
-    height: 150px;
+    width: 250px;
+    height: 300px;
+    /* background-color: yellow; */
+    grid-gap: 0;
+    margin-bottom: 1px;
+}
+@media screen and (max-width: 768px) {
+    width: 230px;
+    height: 300px;
     /* background-color: yellow; */
     grid-gap: 0;
     margin-bottom: 1px;
