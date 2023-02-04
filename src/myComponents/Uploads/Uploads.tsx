@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {BiImageAdd} from "react-icons/bi"
+
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
@@ -115,8 +115,8 @@ const Box = styled.input`
     height: 300px;
     border-radius: 5px;
     border: 1px solid black;
-    /* background-color: white; */
-    background-color: red;
+    background-color: white;
+    /* background-color: red; */
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
