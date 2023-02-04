@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { BsFillTelephoneFill } from "react-icons/bs";
+import { AiOutlineInstagram } from "react-icons/ai";
+import {  FiFacebook } from "react-icons/fi";
+import { TfiLinkedin } from "react-icons/tfi";
+import { TbBrandTwitter } from "react-icons/tb";
+import {BiLocationPlus} from "react-icons/bi";
+import {MdEmail} from "react-icons/md";
+import { Link } from 'react-router-dom';
 import {FaFacebook, FaTwitter, FaGithub, FaInstagram, FaYoutube} from "react-icons/fa";
 import {BsLinkedin} from "react-icons/bs";
 
@@ -13,35 +20,39 @@ function AndelaFooter() {
                 <Icons>
                     <FaFacebook />
                     <FaTwitter />
-                    <FaGithub />
+                  
                     <FaInstagram />
-                    <FaYoutube />
-                    <BsLinkedin />
+                   
+                    
                 </Icons>
             </FirstDiv>
 
             <SecondDiv>
                   <Box>
-                      <h6>Socials</h6>
+                      <h4>LINKS</h4>
 
-                      <Nav>Facebook</Nav>
+                      <Nav>Catalog</Nav>
 
-                      <Nav>Instagram</Nav>
+                      <Nav>Contact</Nav>
 
-                      <Nav>Whatsapp</Nav>
+                      <Nav>Uploads</Nav>
                   </Box>
 
                   <Box>
-                      <h6>Catalog</h6>
-
-                      <Nav>View All Designs</Nav>
-
-                      <Nav>Upload </Nav>
-
-                      <Nav>View One </Nav>
-
-                      <Nav>Resources</Nav>
-                  </Box>
+              <h3>Contact Info</h3>
+              <div>
+                <BiLocationPlus />
+                <Nav>17,college road</Nav>
+              </div>
+              <div>
+                <MdEmail />
+                <Nav>ogbuuzoma413@gmail.com</Nav>
+              </div>
+              <div>
+                <BsFillTelephoneFill />
+                <Nav>09078544231</Nav>
+              </div>
+          </Box>
 
               
             </SecondDiv>
@@ -51,6 +62,22 @@ function AndelaFooter() {
 }
 
 export default AndelaFooter;
+
+const Nav = styled.div`
+   padding-bottom: 20px;
+    font-size: 18px;
+    color: rgb(129, 132, 141);
+    transition: all 400ms;
+`;
+const Box = styled.div`
+/* display: flex;
+flex-direction: column; */
+div{
+  /* display: flex; */
+  /* margin-left: 15px; */
+}
+
+`;
 
 const Container = styled.div`
   width: 100%;
@@ -77,7 +104,7 @@ const SecondDiv = styled.div`
     width : 65%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 50px;
 `;
 const Logo = styled.h1`
@@ -89,21 +116,21 @@ const Icons = styled.div`
     width: 100%;
     color: white;
     margin-top: 50px;
-   size: 150px;
+   font-size: 30px;
 `;
-const Box = styled.div`
-h6{
-  font-weight: 900;
-}
+// const Box = styled.div`
+// h6{
+//   font-weight: 900;
+// }
 
-`;
-const Nav = styled.div`
-    padding-bottom: 20px;
-    font-size: 12px;
-    transition: all 350ms;
+// `;
+// const Nav = styled.div`
+//     padding-bottom: 20px;
+//     font-size: 12px;
+//     transition: all 350ms;
 
-    :hover{ 
-        cursor: pointer;
-        text-decoration: underline;
-    }
-`;
+//     :hover{ 
+//         cursor: pointer;
+//         text-decoration: underline;
+//     }
+// `;
