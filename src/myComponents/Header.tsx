@@ -60,7 +60,7 @@ const DivFour = styled.div`
 const Button2 = styled(Link)`
 
 width: 120px;
-height: 30px;
+height: 40px;
 background-color: white;
 color: black;
 border: 1px solid black;
@@ -77,7 +77,7 @@ text-decoration: none;
 const Button1 = styled(Link)`
 margin-right: 10px;
 width: 120px;
-height: 30px;
+height: 40px;
 background-color: black;
 color: white;
 text-decoration: none;

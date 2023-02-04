@@ -50,7 +50,7 @@ const uploadData = async (e:any) => {
         <div>
             <Container>
                 <Wrapper>
-                    <h1>Upload new looks</h1>
+                    <h1>Upload Products</h1>
                               
           <Circle>
             <Img src={preview} />
@@ -87,27 +87,12 @@ const uploadData = async (e:any) => {
 
 export default Uploads
 
-// const Hold = styled.div`
-//        width: 200px;
-//     height: 300px;
-//     border-radius: 5px;
-//     border: 1px solid black;
-//     background-color: white;
-//     /* background-color: red; */
-//     margin-bottom: 20px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// border: 1px solid black;
-// position: relative;
-//     font-size: 30px;
-// `
 
 const Img = styled.img`
 width: 100%;
 height: 100%;
 object-fit: cover;
-/* border-radius: 50%; */
+
 
 `
 
@@ -115,7 +100,7 @@ const Circle = styled.div`
   height: 250px;
   width: 250px;
   border-radius: 5px;
-  /* border-radius: 50%; */
+
   background-color: #e6e4e4;
   display: flex;
   justify-content: center;

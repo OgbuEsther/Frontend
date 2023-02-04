@@ -40,18 +40,18 @@ function AndelaFooter() {
 
                   <Box>
               <h3>Contact Info</h3>
-              <div>
+              <Div>
                 <BiLocationPlus />
-                <Nav>17,college road</Nav>
-              </div>
-              <div>
+                <Nav1>17,college road</Nav1>
+              </Div>
+              <Div>
                 <MdEmail />
-                <Nav>ogbuuzoma413@gmail.com</Nav>
-              </div>
-              <div>
+                <Nav1>ogbuuzoma413@gmail.com</Nav1>
+              </Div>
+              <Div>
                 <BsFillTelephoneFill />
-                <Nav>09078544231</Nav>
-              </div>
+                <Nav1>09078544231</Nav1>
+              </Div>
           </Box>
 
               
@@ -63,11 +63,40 @@ function AndelaFooter() {
 
 export default AndelaFooter;
 
+
+const Div = styled.div`
+display: flex;
+margin-left: 50px;
+
+`
+
+const Nav1 = styled.div`
+    font-size :20px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+    margin-left: 30px;
+    transition: all 400ms;
+    :hover{
+        text-decoration: underline;
+     
+        transform: scale(0.99);
+    }
+`
+
 const Nav = styled.div`
    padding-bottom: 20px;
-    font-size: 18px;
-    color: rgb(129, 132, 141);
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
     transition: all 400ms;
+    font-weight  :bold   ;
+    transition: all 400ms;
+    :hover{
+        text-decoration: underline;
+       
+        transform: scale(0.99);
+    }
 `;
 const Box = styled.div`
 /* display: flex;
@@ -81,8 +110,9 @@ div{
 
 const Container = styled.div`
   width: 100%;
-  height: 50vh;
-  background-color: #141414c5;
+  /* height: 50vh; */
+  background-color: darkgray;
+
 `;
 const Wrapper = styled.div`
     display: flex;
@@ -90,14 +120,14 @@ const Wrapper = styled.div`
     padding: 30px;
     margin-top: 30px;
     flex-wrap: wrap;
-    color: white;
+    color: black;
 
     @media screen and (max-width: 425px) {
         padding: 0;
     }
 `;
 const FirstDiv = styled.div`
-    width : 300px;
+    width : 200px;
     margin-top: 50px; 
 `;
 const SecondDiv = styled.div`
@@ -114,23 +144,7 @@ const Icons = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
-    color: white;
+    color: black;
     margin-top: 50px;
    font-size: 30px;
 `;
-// const Box = styled.div`
-// h6{
-//   font-weight: 900;
-// }
-
-// `;
-// const Nav = styled.div`
-//     padding-bottom: 20px;
-//     font-size: 12px;
-//     transition: all 350ms;
-
-//     :hover{ 
-//         cursor: pointer;
-//         text-decoration: underline;
-//     }
-// `;
