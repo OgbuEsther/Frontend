@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react"
+import { useParams } from "react-router-dom";
 
 import styled from "styled-components"
 
@@ -15,9 +16,9 @@ interface gears {
 
 const Single = () =>{
     const [userData , setUserData] = React.useState<gears>()
-
+    const { id } = useParams();
     const fetchData = async() =>{
-        await axios.get("https://beauty-q7ww.onrender.com/api/getone").then((res) =>{
+        await axios.get(`https://beauty-q7ww.onrender.com/api/getone/${id}`).then((res) =>{
             // console.log(res.data.data)
             setUserData(res.data.data)
 
@@ -48,7 +49,7 @@ export default Single
 
 const Col = styled.div`
 width: 100%;
-height: 100vh;
+/* height: 100vh; */
 `
 
 const Row = styled.div``
@@ -56,5 +57,5 @@ const Row = styled.div``
 const Container = styled.div`
     background-color: aliceblue;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     `
