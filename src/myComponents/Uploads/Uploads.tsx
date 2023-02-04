@@ -59,8 +59,7 @@ const uploadData = async () => {
               setName(e.target.value)}} type="text" placeholder="Enter name" />
                     <input value={price}   onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
               setPrice(e.target.value)}} type="text" placeholder="Enter price" />
-{/* 
-              <Button2 onClick={uploadData}>SUMBIT</Button2> */}
+
                {name !== "" &&
           image !== "" &&
           price !== "" 
