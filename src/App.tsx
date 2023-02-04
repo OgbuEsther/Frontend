@@ -9,7 +9,7 @@ import Footer from './myComponents/Footer';
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       
       <Header />
       <Routes />
