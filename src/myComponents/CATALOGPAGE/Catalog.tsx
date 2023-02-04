@@ -30,7 +30,7 @@ const Catalog = () =>{
 
     React.useEffect(()=>{
         fetchData()
-    })
+    },[])
     return (
         <div>
            
