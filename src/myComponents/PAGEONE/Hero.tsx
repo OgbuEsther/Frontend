@@ -19,7 +19,7 @@ const Hero = () => {
               </TextOne>
               <Des>
               We have a collection of the best head gears and hand bags for you. 
-
+              What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.
               </Des>
             </TextHold>
             <button>

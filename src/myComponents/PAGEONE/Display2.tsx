@@ -13,6 +13,8 @@ const Display2 : React.FC =() =>{
         <div>
             <Container>
                <h1> WHAT YOU GET AS A CUSTOMER</h1>
+               <p>Shop for stunning handbags, purses, head gears, head bands and auto-gele for daytime wear, evenings, work events and the much loved weekend.
+</p>
                 <Wrapper>
                     <Image>
                         <img src={one} alt="head gear" />
@@ -53,8 +55,10 @@ margin-bottom: 30px;
 flex-direction: column;
 
 h1{
+    margin: 0;
       @media screen and (max-width: 500px) {
  width: 300px;
+
  
  font-size: 20px;
 }
@@ -63,6 +67,12 @@ h1{
  
  font-size: 20px;
 }
+}
+
+p{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
 }
 
 `
