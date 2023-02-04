@@ -22,7 +22,7 @@ const toggle = () =>{
                     <Navs to = "/home">Home</Navs>
                     <Navs to = "/catalog">Catalog</Navs>
                     <Navs to = "/contact">Contact</Navs>
-                    <Navs to = "/upload">Upload</Navs>
+                    <Navs to = "/uploads">Upload</Navs>
                 </NavLinks>
 
                 <ButtonHold>
