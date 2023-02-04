@@ -16,14 +16,15 @@ const handleImage = (e: any) => {
     const file = e.target.files![0];
     console.log(file);
     const previewUrl = URL.createObjectURL(file);
-
+e.preventDefault()
     setImage(file);
     setPreview(previewUrl);
     console.log(preview);
   };
 
-const uploadData = async () => {
-
+const uploadData = async (e:any) => {
+    e.preventDefault()
+    console.log("Data Posted")
     
     const formData = new FormData();
 
@@ -35,10 +36,13 @@ const uploadData = async () => {
     await axios
       .post(`https://beauty-q7ww.onrender.com/api/newgear`, formData)
       .then((res) => {
-        console.log(res);
+        console.log("this is new data :", res.data);
         alert("upload successfull");
+        
         navigate("/");
-      });
+      }).catch((error) => {
+        console.log("error :", error);
+      })
   };
 
 
@@ -47,11 +51,14 @@ const uploadData = async () => {
             <Container>
                 <Wrapper>
                     <h1>Upload new looks</h1>
-                    <Box onChange={handleImage} id= "pix" type="file" />
-                    
+                              
           <Circle>
             <Img src={preview} />
           </Circle>
+                  
+                  <Box onChange={handleImage} id= "pix" type="file" />
+                  
+          
                         
                     
                     <Button htmlFor = "pix">ADD IMAGE</Button>
@@ -80,13 +87,47 @@ const uploadData = async () => {
 
 export default Uploads
 
-const Img = styled.img``
+// const Hold = styled.div`
+//        width: 200px;
+//     height: 300px;
+//     border-radius: 5px;
+//     border: 1px solid black;
+//     background-color: white;
+//     /* background-color: red; */
+//     margin-bottom: 20px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// border: 1px solid black;
+// position: relative;
+//     font-size: 30px;
+// `
+
+const Img = styled.img`
+width: 100%;
+height: 100%;
+object-fit: cover;
+/* border-radius: 50%; */
+
+`
 
 const Circle = styled.div`
-    display: flex;
-    
-    
-`
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  /* border-radius: 50%; */
+  background-color: #e6e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  flex-direction: column;
+  font-size: 30px;
+  margin-bottom: 20px;
+  span {
+    font-size: 12px;
+  }
+`;
 
 const Button2 = styled.button<{ bg: string; cp: string }>`
   height: 40px;
@@ -108,31 +149,49 @@ const Button2 = styled.button<{ bg: string; cp: string }>`
 `;
 
 
-const Button = styled.label``
+const Button = styled.label`
+width: 150px;
+height: 50px;
+display: flex;
+justify-content : center;
+align-items: center;
+margin-bottom: 30px;
+border-radius: 30px;
+background-color : black;
+color: white;
+border: none;
+outline: none;
+
+
+`
 
 const Box = styled.input`
-    width: 200px;
+display: none;
+    /* width: 200px;
     height: 300px;
     border-radius: 5px;
     border: 1px solid black;
     background-color: white;
-    /* background-color: red; */
+    background-color: red;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 border: none;
-    font-size: 30px;
+    font-size: 30px; */
 `
 
 const Wrapper = styled.form`
 width: 300px;
-height: 500px;
+/* height: 500px; */
+margin-top: 70px;
 box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+border-radius: 5px;
+padding-bottom: 20px;
 
 input{
     width: 200px;
@@ -149,6 +208,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
 
     width: 100%;
     height: 100vh;

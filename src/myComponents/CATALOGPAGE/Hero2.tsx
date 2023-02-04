@@ -21,6 +21,8 @@ export default Hero2;
 const Shop = styled.div`
 position: absolute;
 top: 80%;
+z-index: 111;
+margin-left: 70px;
 `
 
 const Wrapper = styled.div`
