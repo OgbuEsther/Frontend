@@ -5,6 +5,7 @@ import Header from './myComponents/Header';
 import Routes from './myComponents/allRoutes/Routes';
 import { GlobalStyle } from './GlobalStyles';
 import Footer from './myComponents/Footer';
+import DropDown from './myComponents/DropDown';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       {/* <GlobalStyle /> */}
       
       <Header />
-      <Routes />
-      <Footer />
+      {/* <Routes /> */}
+      <DropDown />
+      {/* <Footer /> */}
     </div>
   );
 }

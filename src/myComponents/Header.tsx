@@ -33,11 +33,11 @@ const toggle = () =>{
                 <DivFour>
             <AiOutlineMenu onClick={toggle} />
           </DivFour>
-      {
+    
+            </Wrapper>
+            {
         show ?     <DropDown /> : null
       }
-            </Wrapper>
-
           </Container>
 
         </div>
@@ -127,7 +127,7 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 500px) {
   display: flex;
-  width: 100%;
+  width: 90%;
 }
 
 `
@@ -143,5 +143,6 @@ const Container = styled.div`
     align-items: center;
     box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
     z-index: 99999;
+    
 
 `

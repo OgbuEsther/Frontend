@@ -32,10 +32,11 @@ const DropDown : React.FC = () =>{
 export default DropDown
 
 const Container = styled.div`
-width: 300px;
-height: calc(100vh - 50px);
+width: 100%;
+height: calc(100vh);
 background-color: rgba(0,0,0,0.6);
 position: absolute;
+position : fixed;
 z-index: 1;
 left: 0;
 top: 50px;
@@ -80,7 +81,7 @@ const Button = styled(Link)<{bg : string , bd : string , col: string , bgh: stri
   justify-content: center;
   align-items: center;
 
-
+z-index: 999999;
 
   :hover {
     background-color: ${(props) => props.bgh};
@@ -95,7 +96,7 @@ display: flex;
 justify-content: space-between;
 width: 250px;
 text-decoration: none;
-
+z-index: 999999;
 h4{
   color: black;
 cursor: pointer;
@@ -109,7 +110,7 @@ transition: all 400ms ease-in-out;
 }
 
 @media screen and (max-width: 500px) {
-  display: none;
+  display: block;
 }
 
 `

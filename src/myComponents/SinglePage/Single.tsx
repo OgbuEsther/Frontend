@@ -17,6 +17,11 @@ interface gears {
 const Single = () =>{
     const [userData , setUserData] = React.useState<gears>()
     const { id } = useParams();
+    const remove = async() =>{
+        await axios.delete(`https://beauty-q7ww.onrender.com/api/remove/${id}`).then((res)=>{
+            console.log(res.data)
+        })
+    }
     const fetchData = async() =>{
         await axios.get(`https://beauty-q7ww.onrender.com/api/getone/${id}`).then((res) =>{
             // console.log(res.data.data)
@@ -28,6 +33,7 @@ const Single = () =>{
 
     React.useEffect(()=>{
         fetchData()
+        
     },[])
     return(
         <div>
